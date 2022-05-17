@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "sujan raj shrestha",
+  "license": "ISC",
+  "description": ""
+}

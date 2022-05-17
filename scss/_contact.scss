@@ -1,0 +1,95 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+
+  &__heading {
+    font-size: 50px;
+    color: #f9a826;
+  }
+
+  p {
+    color: white;
+    font-size: 25px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+  }
+  .button {
+    border: 1px solid #f9a826;
+    border-radius: 12px;
+  }
+}
+
+#screen {
+  animation-name: screen;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  fill: rgb(255, 255, 255);
+  animation-iteration-count: infinite;
+}
+
+@keyframes screen {
+  0% {
+    fill: rgb(175, 175, 175);
+  }
+  25% {
+    fill: rgb(186, 186, 186);
+  }
+  50% {
+    fill: rgb(213, 213, 213);
+  }
+  75% {
+    fill: rgb(230, 230, 230);
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+#leaf {
+  animation-name: leaf;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  fill: #f9a826;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leaf {
+  0% {
+    fill: #ffffff;
+  }
+  25% {
+    fill: #ffdba1;
+  }
+  50% {
+    fill: #facb7e;
+  }
+  75% {
+    fill: #ffb339;
+  }
+  100% {
+    fill: #f9a826;
+  }
+}
+
+#color {
+  animation-name: color;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  fill: #f9a826;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    fill: #000000;
+  }
+  100% {
+    fill: #f9a826;
+  }
+}

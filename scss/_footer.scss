@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    align-content: center;
+    .fa-circle-arrow-up {
+      color: #f9a826;
+    }
+    p {
+      font-size: 15px;
+      color: white;
+    }
+  }
+
+  &__copyright {
+    color: white;
+  }
+  &__social-media {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+  }
+  .fab {
+    color: #f9a826;
+  }
+}

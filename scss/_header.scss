@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  nav {
+    text-decoration: none;
+    padding: 25px;
+
+    ul {
+      list-style: none;
+      font-size: 20px;
+    }
+    li {
+      display: inline-block;
+    }
+    li:nth-child(n - 2) {
+      margin-right: 30px;
+    }
+    a {
+      text-decoration: none !important;
+      color: white;
+    }
+  }
+}

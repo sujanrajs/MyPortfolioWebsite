@@ -1,0 +1,25 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+
+  padding: 180px;
+
+  &__left-container {
+    padding: 200px;
+    //background-color: aqua;
+    color: #f9a826;
+    p {
+      color: white;
+    }
+  }
+
+  &__right-container {
+    //background-color: aqua;
+    width: auto;
+    img {
+      width: 480px;
+      border-radius: 35% 95% / 50%;
+    }
+  }
+}
