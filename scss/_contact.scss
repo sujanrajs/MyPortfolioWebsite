@@ -21,10 +21,15 @@
     font-size: 20px;
     color: white;
   }
-  .email_button {
-    border: 1px solid #f9a826;
+  .email__button {
+    border: 2px solid #f9a826;
     border-radius: 12px;
     padding: 10px;
+  }
+
+  .email__button:hover {
+    border: 2px solid white;
+    color: #f9a826;
   }
 }
 
