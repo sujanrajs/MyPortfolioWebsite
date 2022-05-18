@@ -1,16 +1,26 @@
 .intro {
   display: flex;
   flex-direction: row;
-  gap: 150px;
-
-  padding: 180px;
-
+  //background-color: #f9a826;
+  margin: 30px 100px 50px 100px;
+  gap: 70px;
   &__left-container {
-    padding: 200px;
     //background-color: aqua;
     color: #f9a826;
+    padding-top: 120px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
     p {
+      padding-top: 25px;
       color: white;
+      font-size: 25px;
     }
   }
 
@@ -21,5 +31,44 @@
       width: 480px;
       border-radius: 35% 95% / 50%;
     }
+  }
+}
+
+.intro__para-firstname {
+  color: #f9a826;
+}
+
+.intro__sub-heading {
+  overflow: hidden;
+  border-right: 2px solid orange;
+  white-space: nowrap;
+  animation: typing 5s forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+.intro__heading-blinking {
+  animation: blinking 1s infinite;
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
