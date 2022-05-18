@@ -27,6 +27,7 @@
   &__right-container {
     //background-color: aqua;
     width: auto;
+    height: auto;
     img {
       width: 480px;
       border-radius: 35% 95% / 50%;
@@ -46,7 +47,7 @@
   overflow: hidden;
   border-right: 2px solid orange;
   white-space: nowrap;
-  animation: typing 5s forwards;
+  animation: typing 6s forwards;
   font-size: 1.6rem;
   width: 0;
 }
