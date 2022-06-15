@@ -17,10 +17,22 @@
     gap: 60px;
     font-size: 50px;
     color: white;
-    max-height: 50px;
+    min-height: 50px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.745);
   }
   .fab:hover {
     text-shadow: 2px 2px 2px #f9a826;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__icons {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

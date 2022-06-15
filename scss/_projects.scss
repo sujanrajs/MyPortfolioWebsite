@@ -1,0 +1,42 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f9a826;
+  font-size: 50px;
+  margin-top: 25px;
+
+  &__heading {
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-size: 50px;
+    color: white;
+    min-height: 50px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.745);
+    cursor: pointer;
+    a {
+      color: white;
+    }
+  }
+  .fab:hover {
+    text-shadow: 2px 2px 2px #f9a826;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__icons {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

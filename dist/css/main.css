@@ -104,6 +104,18 @@
   100% {
     opacity: 1; } }
 
+@media (max-width: 750px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  @keyframes typing {
+    from {
+      width: 0; }
+    to {
+      width: 75%; } } }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -144,6 +156,15 @@
     gap: 50px;
     color: white; }
 
+@media (max-width: 750px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  __education-container {
+    display: flex;
+    flex-direction: column; } }
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -161,10 +182,19 @@
     gap: 60px;
     font-size: 50px;
     color: white;
-    max-height: 50px;
+    min-height: 50px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.745); }
   .skills .fab:hover {
     text-shadow: 2px 2px 2px #f9a826; }
+
+@media (max-width: 750px) {
+  .skills__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .skills__icons__icons {
+      display: flex;
+      flex-direction: column; } }
 
 .contact {
   display: flex;
@@ -248,6 +278,40 @@
     fill: #000000; }
   100% {
     fill: #f9a826; } }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f9a826;
+  font-size: 50px;
+  margin-top: 25px; }
+  .projects__heading {
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px; }
+  .projects__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-size: 50px;
+    color: white;
+    min-height: 50px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.745);
+    cursor: pointer; }
+    .projects__icons a {
+      color: white; }
+  .projects .fab:hover {
+    text-shadow: 2px 2px 2px #f9a826; }
+
+@media (max-width: 750px) {
+  .projects__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .projects__icons__icons {
+      display: flex;
+      flex-direction: column; } }
 
 * {
   margin: 0px;
