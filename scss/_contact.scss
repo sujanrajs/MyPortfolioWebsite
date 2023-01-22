@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 45px;
+  margin: 0px 100px 0px 100px;
   //background-color: aqua;
 
   &__heading {
@@ -107,5 +108,12 @@
   }
   100% {
     fill: #f9a826;
+  }
+}
+
+@media (max-width: 900px) {
+  #size {
+    width: 375px;
+    height: 310px;
   }
 }

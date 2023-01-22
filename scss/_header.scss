@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0px 100px 0px 100px;
   nav {
     text-decoration: none;
     padding: 25px;
@@ -23,5 +24,14 @@
     a:hover {
       border-bottom: 2px solid #f9a826;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
   }
 }
