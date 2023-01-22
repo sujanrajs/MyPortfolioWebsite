@@ -45,9 +45,8 @@
 
 .intro__sub-heading {
   overflow: hidden;
-  border-right: 2px solid orange;
   white-space: nowrap;
-  animation: typing 6s forwards;
+  animation: typing 8s forwards;
   font-size: 1.6rem;
   width: 0;
 }
@@ -56,13 +55,14 @@
     width: 0;
   }
   to {
-    width: 55%;
+    width: 100%;
   }
 }
 
 .intro__heading-blinking {
   animation: blinking 1s infinite;
 }
+
 @keyframes blinking {
   0% {
     opacity: 0;
@@ -84,14 +84,5 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 75%;
-    }
   }
 }
