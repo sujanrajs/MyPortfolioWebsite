@@ -39,3 +39,11 @@
     color: white;
   }
 }
+
+@media (max-width: 450px) {
+  .footer {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

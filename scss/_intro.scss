@@ -92,3 +92,25 @@
     padding-top: 0px;
   }
 }
+
+@media (max-width: 450px) {
+  .intro {
+    &__left-container {
+      h2,
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    &__right-container {
+      width: auto;
+      height: auto;
+      img {
+        width: 320px;
+        border-radius: 35% 95% / 50%;
+      }
+      img:hover {
+        border: 1px solid #f9a826;
+      }
+    }
+  }
+}

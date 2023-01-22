@@ -117,3 +117,17 @@
     height: 310px;
   }
 }
+
+@media (max-width: 450px) {
+  .contact {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+}

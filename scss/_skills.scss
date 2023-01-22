@@ -5,6 +5,7 @@
   color: #f9a826;
   font-size: 50px;
   margin: 25px 100px 0px 100px;
+  font-size: 100%;
 
   &__heading {
     font-size: 40px;
@@ -36,6 +37,14 @@
     &__icons {
       display: flex;
       flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .skills {
+    h2 {
+      font-size: 2rem;
     }
   }
 }
