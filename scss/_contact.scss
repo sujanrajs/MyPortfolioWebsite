@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 45px;
   margin: 0px 100px 0px 100px;
   //background-color: aqua;
 
@@ -113,11 +112,17 @@
 
 @media (max-width: 900px) {
   .contact {
-    margin: 25px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
   }
   #size {
     width: 375px;
     height: 310px;
+  }
+  .contact__heading {
+    margin-bottom: 15px;
+  }
+  .email__button {
+    margin-top: 15px;
   }
 }
 
@@ -134,8 +139,13 @@
       font-size: 1rem;
     }
   }
+  .contact__heading {
+    margin-bottom: 15px;
+  }
+  .email__button {
+    margin-top: 15px;
+  }
   #size {
-    width: 275px;
-    height: 310px;
+    width: 300px;
   }
 }

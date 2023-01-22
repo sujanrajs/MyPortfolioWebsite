@@ -37,10 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__icons {
-      display: flex;
-      flex-direction: column;
-    }
+    gap: 0px;
   }
 }
 
@@ -50,5 +47,8 @@
     h2 {
       font-size: 2rem;
     }
+  }
+  .projects__icons {
+    gap: 0px;
   }
 }
