@@ -80,6 +80,7 @@
 
 @media (max-width: 900px) {
   .intro {
+    margin: 25px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,17 +96,18 @@
 
 @media (max-width: 450px) {
   .intro {
+    margin: 25px 20px 0px 20px;
     &__left-container {
       h2,
       p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
     &__right-container {
       width: auto;
       height: auto;
       img {
-        width: 320px;
+        width: 270px;
         border-radius: 35% 95% / 50%;
       }
       img:hover {

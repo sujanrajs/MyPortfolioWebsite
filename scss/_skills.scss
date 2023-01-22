@@ -29,6 +29,7 @@
 @media (max-width: 750px) {
   .skills {
     margin-top: 0px;
+    margin: 25px 20px 0px 20px;
   }
   .skills__icons {
     display: flex;
@@ -43,6 +44,7 @@
 
 @media (max-width: 450px) {
   .skills {
+    margin: 25px 20px 0px 20px;
     h2 {
       font-size: 2rem;
     }

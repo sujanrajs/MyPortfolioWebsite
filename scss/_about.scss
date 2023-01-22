@@ -57,6 +57,7 @@
 
 @media (max-width: 900px) {
   .about {
+    margin: 25px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +83,8 @@
 }
 
 @media (max-width: 450px) {
-  #about {
+  .about {
+    margin: 25px 20px 0px 20px;
     h2 {
       font-size: 2rem;
     }
