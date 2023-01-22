@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "node-sass": "^7.0.1",
-    "sass": "^1.52.3"
+    "sass": "^1.57.1"
   },
   "name": "portfoliowebsite",
   "version": "1.0.0",
