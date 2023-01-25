@@ -3,30 +3,56 @@
   flex-direction: row;
   justify-content: center;
   margin: 0px 100px 0px 100px; }
-  .header nav {
-    text-decoration: none;
-    padding: 25px; }
-    .header nav ul {
+  .header .hamburger {
+    display: none; }
+  .header .nav-bar {
+    position: fixed;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around; }
+    .header .nav-bar ul {
       list-style: none;
       font-size: 20px; }
-    .header nav li {
+    .header .nav-bar li {
       display: inline-block; }
-    .header nav li:nth-child(n - 2) {
+    .header .nav-bar li:nth-child(n - 2) {
       margin-right: 50px; }
-    .header nav a {
+    .header .nav-bar a {
       text-decoration: none !important;
       color: white; }
-    .header nav a:hover {
+    .header .nav-bar a:hover {
       border-bottom: 2px solid #f9a826; }
 
 @media (max-width: 900px) {
   .header {
-    margin: 0px 20px 0px 20px; }
-  ul {
+    margin: 0px 20px 0px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2px; } }
+    align-items: center; }
+    .header .hamburger {
+      display: block;
+      cursor: pointer;
+      height: 30px;
+      padding-top: 10px; }
+    .header .line {
+      width: 30px;
+      height: 3px;
+      background-color: #f9a826;
+      margin: 6px 0; }
+    .header ul {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px; }
+    .header .nav-bar {
+      height: 0;
+      overflow: hidden;
+      padding: 0; }
+    .header .active {
+      height: 200px; } }
 
 .footer {
   display: flex;
@@ -69,7 +95,7 @@
 .intro {
   display: flex;
   flex-direction: row;
-  margin: 30px 100px 50px 100px;
+  margin: 90px 100px 50px 100px;
   gap: 70px; }
   .intro__left-container {
     color: #f9a826;
@@ -122,14 +148,13 @@
 
 @media (max-width: 1020px) {
   .intro {
-    margin: 25px 25px 0px 25px;
+    margin: 90px 25px 0px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 0px;
-    padding-top: 20px;
-    border-top: 2px solid #b0b0b0; }
+    padding-top: 20px; }
   .intro__left-container {
     padding-top: 0px; } }
 
