@@ -10,7 +10,8 @@
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    opacity: 0.97; }
     .header .nav-bar ul {
       list-style: none;
       font-size: 20px; }
@@ -49,10 +50,14 @@
       gap: 2px; }
     .header .nav-bar {
       height: 0;
+      position: relative;
       overflow: hidden;
       padding: 0; }
-    .header .active {
-      height: 200px; } }
+    .header .nav-bar.active {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 0; } }
 
 .footer {
   display: flex;
