@@ -1,13 +1,14 @@
 {
   "dependencies": {
-    "node-sass": "^7.0.1",
-    "sass": "^1.57.1"
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.70.0"
   },
   "name": "portfoliowebsite",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "start": "node-sass -w scss/ -o dist/css/ --recursive & live-server"
   },
   "author": "sujan raj shrestha",
   "license": "ISC",
