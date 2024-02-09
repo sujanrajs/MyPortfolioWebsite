@@ -348,13 +348,13 @@
 
 @keyframes leaf {
   0% {
-    fill: #ffffff; }
+    fill: #7bff00; }
   25% {
-    fill: #ffdba1; }
+    fill: #55ff00; }
   50% {
-    fill: #facb7e; }
+    fill: #ff9d00; }
   75% {
-    fill: #ffb339; }
+    fill: #ffb948; }
   100% {
     fill: #f9a826; } }
 
