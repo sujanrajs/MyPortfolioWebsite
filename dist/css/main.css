@@ -25,7 +25,7 @@
     .header .nav-bar a:hover {
       border-bottom: 2px solid #f9a826; }
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   .header {
     margin: 0px 20px 0px 20px;
     display: flex;
@@ -163,7 +163,7 @@
   .intro__left-container {
     padding-top: 0px; } }
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   .intro {
     padding-top: 20px; } }
 
