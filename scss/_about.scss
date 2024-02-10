@@ -17,7 +17,6 @@
 
   p {
     font-size: 20px;
-    background-color: inherit;
   }
 
   &__wrapper {
@@ -57,9 +56,32 @@
   }
 }
 
-.box-background {
+/* .box-background {
   padding: 20px;
-  border-bottom: 1px solid black;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom left, #e74c3c, #f39c12) 1;
+  border-image-source: linear-gradient(to bottom left, #e74c3c, #f39c12);
+  border-image-slice: 1;
+  border-radius: 10px;
+} */
+
+.box-background {
+  display: flow-root;
+  position: relative;
+  padding: 20px;
+}
+
+.box-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(140deg, #e74c3c, #f39c12) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 @media (max-width: 900px) {
