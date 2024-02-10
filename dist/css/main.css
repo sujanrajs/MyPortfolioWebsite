@@ -258,15 +258,17 @@
   .about__experiences-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    border-top: 1px solid #f9a826;
-    padding-top: 20px; } }
+    gap: 25px; }
+  h3 {
+    border-bottom: 1px solid #ffffff; } }
 
 @media (max-width: 450px) {
   .about {
     margin: 25px 20px 0px 20px; }
     .about h2 {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .box-background {
+    min-width: 250px; } }
 
 .skills {
   display: flex;
