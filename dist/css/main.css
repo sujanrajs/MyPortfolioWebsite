@@ -207,8 +207,9 @@
     align-items: center;
     gap: 30px; }
   .about__experiences-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     gap: 50px;
     color: white; }
@@ -224,18 +225,11 @@
     gap: 50px;
     color: white; }
 
-/* .box-background {
-  padding: 20px;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to bottom left, #e74c3c, #f39c12) 1;
-  border-image-source: linear-gradient(to bottom left, #e74c3c, #f39c12);
-  border-image-slice: 1;
-  border-radius: 10px;
-} */
 .box-background {
   display: flow-root;
   position: relative;
-  padding: 20px; }
+  padding: 20px;
+  min-width: 350px; }
 
 .box-background::before {
   content: "";
