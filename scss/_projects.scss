@@ -20,6 +20,7 @@
     max-width: 1080px;
   }
   &__project {
+    position: relative;
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
@@ -29,10 +30,19 @@
       height: 100%;
       object-fit: cover;
       transition: object-fit 0.3s ease;
+      filter: blur(2px);
     }
     img:hover {
-      object-fit: fill;
       cursor: pointer;
+      filter: blur(0);
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #000000;
+      font-size: 1.3rem;
     }
   }
 
@@ -70,6 +80,7 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
+    margin-top: 10px;
     font-size: 50px;
     color: white;
     min-height: 50px;

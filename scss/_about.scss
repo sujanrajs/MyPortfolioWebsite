@@ -6,17 +6,7 @@
   margin: 25px 100px 0px 100px;
 
   &__heading {
-    font-size: 40px;
     border-bottom: 2px solid black;
-    margin-bottom: 25px;
-  }
-
-  h3 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 20px;
   }
 
   &__wrapper {
@@ -101,17 +91,11 @@
     flex-direction: column;
     gap: 25px;
   }
-  h3 {
-    border-bottom: 1px solid #ffffff;
-  }
 }
 
 @media (max-width: 450px) {
   .about {
     margin: 25px 20px 0px 20px;
-    h2 {
-      font-size: 2rem;
-    }
   }
   .box-background {
     min-width: 250px;

@@ -11,7 +11,8 @@
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    backdrop-filter: blur(5px); }
+    backdrop-filter: blur(5px);
+    z-index: 1000; }
     .header .nav-bar ul {
       list-style: none;
       font-size: 20px; }
@@ -107,10 +108,6 @@
   .intro__left-container {
     color: #f9a826;
     align-self: center; }
-    .intro__left-container h1 {
-      font-size: 30px; }
-    .intro__left-container h2 {
-      font-size: 25px; }
     .intro__left-container p {
       padding-top: 25px;
       color: white;
@@ -191,13 +188,7 @@
   color: #f9a826;
   margin: 25px 100px 0px 100px; }
   .about__heading {
-    font-size: 40px;
-    border-bottom: 2px solid black;
-    margin-bottom: 25px; }
-  .about h3 {
-    font-size: 25px; }
-  .about p {
-    font-size: 20px; }
+    border-bottom: 2px solid black; }
   .about__wrapper {
     display: flex;
     flex-direction: column;
@@ -260,15 +251,11 @@
   .about__experiences-container {
     display: flex;
     flex-direction: column;
-    gap: 25px; }
-  h3 {
-    border-bottom: 1px solid #ffffff; } }
+    gap: 25px; } }
 
 @media (max-width: 450px) {
   .about {
     margin: 25px 20px 0px 20px; }
-    .about h2 {
-      font-size: 2rem; }
   .box-background {
     min-width: 250px; } }
 
@@ -332,17 +319,18 @@
     border-bottom: 2px solid black;
     margin-bottom: 25px; }
   .contact p {
-    color: white;
-    font-size: 25px; }
+    font-size: 1.5rem;
+    padding-bottom: 10px; }
   .contact a {
     text-decoration: none;
     font-size: 20px;
     color: white; }
-  .contact .email__button {
+  .contact .contact__button {
     border: 2px solid #f9a826;
-    border-radius: 12px;
-    padding: 10px; }
-  .contact .email__button:hover {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px; }
+  .contact .contact__button:hover {
     border: 2px solid white;
     color: #f9a826; }
 
@@ -450,6 +438,7 @@
     gap: 30px;
     max-width: 1080px; }
   .projects__project {
+    position: relative;
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
@@ -458,10 +447,18 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: object-fit 0.3s ease; }
+      transition: object-fit 0.3s ease;
+      filter: blur(2px); }
     .projects__project img:hover {
-      object-fit: fill;
-      cursor: pointer; }
+      cursor: pointer;
+      filter: blur(0); }
+    .projects__project p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #000000;
+      font-size: 1.3rem; }
   .projects__overlay {
     position: absolute;
     bottom: 0;
@@ -488,6 +485,7 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
+    margin-top: 10px;
     font-size: 50px;
     color: white;
     min-height: 50px;
@@ -521,3 +519,18 @@
 
 body {
   background-color: #004646; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem;
+  border-bottom: 1px solid #000000;
+  padding-top: 20px; }
+
+p {
+  font-size: 1.2rem;
+  color: white; }
