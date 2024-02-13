@@ -450,15 +450,37 @@
       transition: object-fit 0.3s ease;
       filter: blur(2px); }
     .projects__project img:hover {
-      cursor: pointer;
-      filter: blur(0); }
+      cursor: pointer; }
     .projects__project p {
       position: absolute;
+      width: fit-content;
       top: 50%;
       left: 50%;
+      text-align: center;
       transform: translate(-50%, -50%);
-      color: #000000;
-      font-size: 1.3rem; }
+      color: #f9a826;
+      padding: 5px;
+      border-radius: 3px;
+      background-color: #000000b6;
+      font-size: 1.2rem; }
+  .projects__project-github-link {
+    font-size: 2rem;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px; }
+  .projects__project-link {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 78%;
+    right: 80%;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px; }
+  .projects__project-link:hover {
+    text-shadow: 2px 2px 2px #f9a826; }
   .projects__overlay {
     position: absolute;
     bottom: 0;
