@@ -172,7 +172,12 @@
 
 @media (max-width: 750px) {
   .intro {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+    .intro__right-container {
+      width: auto;
+      height: auto; }
+      .intro__right-container img {
+        width: 350px; } }
 
 @media (max-width: 450px) {
   .intro {
@@ -184,10 +189,7 @@
       width: auto;
       height: auto; }
       .intro__right-container img {
-        width: 270px;
-        border-radius: 35% 95% / 50%; }
-      .intro__right-container img:hover {
-        border: 1px solid #f9a826; } }
+        width: 300px; } }
 
 .about {
   display: flex;

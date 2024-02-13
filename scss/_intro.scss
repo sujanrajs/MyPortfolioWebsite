@@ -97,6 +97,13 @@
 @media (max-width: 750px) {
   .intro {
     padding-top: 20px;
+    &__right-container {
+      width: auto;
+      height: auto;
+      img {
+        width: 350px;
+      }
+    }
   }
 }
 
@@ -113,11 +120,7 @@
       width: auto;
       height: auto;
       img {
-        width: 270px;
-        border-radius: 35% 95% / 50%;
-      }
-      img:hover {
-        border: 1px solid #f9a826;
+        width: 300px;
       }
     }
   }
