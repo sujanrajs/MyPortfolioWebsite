@@ -17,17 +17,26 @@
   }
 
   &__right-container {
-    //background-color: aqua;
     width: auto;
     height: auto;
     img {
-      width: 420px;
-      border-radius: 35% 95% / 50%;
+      max-width: 450px;
+      border: 3px solid #f9a826;
+      border-radius: 50%;
+      animation: borderAnimation 5s infinite;
     }
+  }
+}
 
-    img:hover {
-      border: 1px solid #f9a826;
-    }
+@keyframes borderAnimation {
+  0% {
+    border-color: #f9a826;
+  }
+  50% {
+    border-color: #f12711;
+  }
+  100% {
+    border-color: #f9a826;
   }
 }
 
