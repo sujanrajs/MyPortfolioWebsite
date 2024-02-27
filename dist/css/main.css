@@ -550,7 +550,7 @@
   font-family: "Trirong", serif; }
 
 body {
-  background-color: #004646; }
+  background: linear-gradient(#47013e, #054d5f, #024127, #000000); }
 
 h1 {
   font-size: 3rem; }
